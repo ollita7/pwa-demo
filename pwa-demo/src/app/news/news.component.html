@@ -1,0 +1,19 @@
+<div class="container">
+  <div>
+      <h1>news</h1>
+      <form name="searchForm">
+        <div class="form-group">
+          <label for="source">Source</label>
+          <input type="text" class="form-control" name="source" [(ngModel)]="model.source" placeholder="source">
+        </div>
+        <button type="button" class="btn btn-default" (click)="search()">Submit</button>
+      </form>
+  </div>
+  <div class="row article" *ngFor="let article of articles">
+    <h3>{{article.title}}</h3>
+    <div>{{article.description}}</div>
+    <div>{{article.author}}</div>
+    <div>{{article.publishedAt}}</div>
+    <a href="article.url" target="_blank">{{article.url}}</a>
+  </div>
+</div>

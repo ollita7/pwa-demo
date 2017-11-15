@@ -1,0 +1,16 @@
+{
+    "short_name": "PWA demo",
+    "name": "Angular4 + PWA demo",
+    "start_url": "/",
+    "theme_color": "#f48c5b",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+          "src": "/assets/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png"
+        }
+      ]
+}
